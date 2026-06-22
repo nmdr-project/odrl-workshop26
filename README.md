@@ -3,7 +3,8 @@
 # Links:
 - ODRL Information Model : https://www.w3.org/TR/odrl-model/ 
 - ODRL Common-Vocabulary: https://www.w3.org/TR/odrl-vocab/ 
-- Best Practice Examples: https://w3c.github.io/odrl/bp/ 
+- Best Practice Examples: https://w3c.github.io/odrl/bp/
+- ODRL Landscape: https://w3c.github.io/odrl/landscape/
 ### Tools:
 #### JSON-LD:
 - Webeditor: https://json-ld.org/playground/ 
