@@ -1,0 +1,18 @@
+ex:UniversityClinicLeipzig a de-gdng:DataProcessingHealthcareFacility .
+ex:InstituteForSoftwareTechnologyKoblenz a de-gdng:HealthDataUser .
+ex: x-rayImageAB a de-gdng:HealthData .
+
+ex:policy a odrl:Set ;
+	odrl:permission [
+		odrl:target ex:x-rayImageAB ; 
+		odrl:assigner ex:UniversityClinicLeipzig ;
+		odrl:assignee ex:InstituteForSoftwareTechnologyKoblenz ;
+		odrl:action odrl:use ;
+		odrl:constraint [ 
+			odrl:leftOperand odrl:purpose ;
+			odrl:operator odrl:isA ;
+			odrl:rightOperand de-gdng:MedicalRehabNursingResearch ] ;
+		odrl:constraint [
+			odrl:leftOperand dpv:hasLegalBasis ;
+			odrl:operator odrl:isA ;
+			odrl:rightOperand de-gdng:P6-3-Consent ] ] . 
