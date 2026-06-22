@@ -14,3 +14,8 @@
 - Validator: https://odrlapi.appspot.com/  https://woutslabbinck.github.io/ODRL-Validator-Demo/ 
 
 JSON-LD / Turtle Converter: https://www.easyrdf.org/converter 
+
+### DPV
+- Data Privacy Vocabulary (W3C) Specifications: https://w3c-cg.github.io/dpv/2.3/dpv/
+- DPVCGG Homepage: http://dpvcg.org
+- List of Vocabularies: https://github.com/w3c-cg/dpv/releases
