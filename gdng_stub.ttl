@@ -1,0 +1,18 @@
+ex:UniversityClinicLeipzig a todo .
+ex:InstituteForSoftwareTechnologyKoblenz a todo .
+ex: x-rayImageAB a todo .
+
+ex:policy a odrl:Set ;
+	odrl:permission [
+		odrl:target ex:x-rayImageAB ; 
+		odrl:assigner ex:UniversityClinicLeipzig ;
+		odrl:assignee ex:InstituteForSoftwareTechnologyKoblenz ;
+		odrl:action odrl:use ;
+		odrl:constraint [ 
+			odrl:leftOperand odrl:purpose ;
+			odrl:operator odrl:isA ;
+			odrl:rightOperand todo ] ;
+		odrl:constraint [
+			odrl:leftOperand todo ;
+			odrl:operator odrl:isA ;
+			odrl:rightOperand todo ] ] . 
