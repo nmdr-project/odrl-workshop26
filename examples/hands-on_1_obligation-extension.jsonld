@@ -1,0 +1,43 @@
+{
+   "@context": "http://www.w3.org/ns/odrl.jsonld",
+   "@type": "Offer",
+   "uid": "http://example.com/policy:9185",
+   "profile": "http://example.com/odrl:profile:12",
+   "permission": [{
+      "target": "http://example.com/clinicalDataSet:55",
+      "assigner": "http://example.com/dho:21",
+      "assignee": {
+         "@type": "PartyCollection",
+         "uid": "https://example.com/groups/umg-employees",
+         "source": "http://example.com/researchers",
+         "refinement": [{
+           "leftOperand": "org:memberOf",
+           "operator": "eq",
+           "rightOperand": "https://example.com/organization/umg"
+         }]
+      },
+      "action": [{
+         "action": "use",
+         "refinement": [{
+            "leftOperand": "purpose",
+            "operator": "isA",
+            "rightOperand": "http://example.com/purposes/Research" 
+         }]
+        }]
+     }],
+   "prohibition": [{
+      "target": "http://example.com/clinicalDataSet:55",
+      "assigner": "http://example.com/dho:21",
+      "action": "distribute"
+   }],
+   "obligation": [{
+      "target": "http://example.com/clinicalDataSet:55",
+      "assigner": "http://example.com/dho:21",
+      "action": "delete",
+      "constraint": [{
+           "leftOperand": "dateTime",
+           "operator": "gt",
+           "rightOperand":  { "@value": "2030-01-01", "@type": "xsd:date" }
+       }]
+   }]
+}
